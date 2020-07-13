@@ -43,7 +43,7 @@ public class GuestUserCheckoutTest extends TestBase
 		checkoutObj = new CheckOutPage(driver);
 		cartpageObj.OpenCheckOutPage();
 		checkoutObj.CheckOutAsGuest();
-		checkoutObj.GuestUserCheckoutProduct("gehadafify","gogooo", "testwa@mail.com", "Egypt", "22ds", "111211","cairo","896342", productName);
+		checkoutObj.GuestUserCheckoutProduct("gehadafify","go", "testwa@mail.com", "Egypt", "22ds", "111211","cairo","896342", productName);
 		Assert.assertTrue(checkoutObj.productname.isDisplayed());
 		Assert.assertTrue(checkoutObj.productname.getText().contains(productName));
 		checkoutObj.ConfirmOrder();
