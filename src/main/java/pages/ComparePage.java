@@ -38,9 +38,8 @@ public class ComparePage extends PageBase{
 	}
 	public void CompareProducts() 
 	{
-		//get alla rows
 		System.out.println(rows.size());
-		//get data from eash row
+		//get data from each row
 		for(WebElement row : rows) 
 		{
 			System.out.println(row.getText()+"\t");
