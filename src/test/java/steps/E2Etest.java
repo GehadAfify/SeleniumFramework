@@ -46,7 +46,7 @@ public class E2Etest  extends TestBase{
 	{
 		checkoutObj = new CheckOutPage(driver);
 		cartpageObj.OpenCheckOutPage();
-		checkoutObj.GuestUserCheckoutProduct("gehadafify","gogooo", "testw@mail.com", "Egypt", "22ds", "111211","cairo","896342", productName);
+		checkoutObj.GuestUserCheckoutProduct("gehadafify","go", "testw@mail.com", "Egypt", "22ds", "111211","cairo","896342", productName);
 		Assert.assertTrue(checkoutObj.productname.isDisplayed());
 		Assert.assertTrue(checkoutObj.productname.getText().contains(productName));
 		checkoutObj.ConfirmOrder();
