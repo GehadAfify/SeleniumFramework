@@ -4,15 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class UserRegisterationPage  extends PageBase
+public class UserRegisterationPage  extends PageBas
 {
-
-	
-	//constructor 3ashan 3amlt inheritance from class that has a constructor so must add constructor here too
 	public UserRegisterationPage(WebDriver driver) 
 	{
-		super(driver);
-		
+		super(driver);		
 	}
 	//by default elements are private
 	@FindBy(id = "gender-male")
