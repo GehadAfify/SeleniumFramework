@@ -36,10 +36,9 @@ public class TestBase  extends AbstractTestNGCucumberTests{
 	
 	@BeforeSuite
 	@Parameters({"browser"})
-	public void startDriver(@Optional ("firefox")String browserName) //optional 3ashan lw msh shayef el parameter eli fe testngXML yrun 3la da
+	public void startDriver(@Optional ("firefox")String browserName) 
 	{
-		
-		if (browserName.equalsIgnoreCase("firefox"))  //ya3ni myb2ash senseitive case 
+		if (browserName.equalsIgnoreCase("firefox")) 
 		{
 			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe");
 			driver  = new FirefoxDriver();	
@@ -82,16 +81,15 @@ public class TestBase  extends AbstractTestNGCucumberTests{
 	{
 		driver.quit();
 	}
-	//take screenshoot when test cas fail and add it in the screenshots folder
+	//take screenshoot when test case fail and add it in the screenshots folder
 	@AfterMethod
-	public void ScreenshotOnFailure(ITestResult result) //itresult interface de eli btrga3 b kol el  results 
+	public void ScreenshotOnFailure(ITestResult result)
 	{
 		if(result.getStatus()== ITestResult.FAILURE) 
 		{
 			System.out.println("Failed");
 			System.out.println("Taking Screenshot .....");
 			Helper.captureScreenshot(driver,result.getName());
-
 		}
 	}
 }
