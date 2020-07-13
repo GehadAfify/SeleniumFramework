@@ -15,7 +15,7 @@ public class PageBase {
 	public Actions actions;
 	public PageBase(WebDriver driver) 
 	{
-		PageFactory.initElements(driver, this);//key word refer to this class elli ana fiha 
+		PageFactory.initElements(driver, this);
 	}
 	
 	protected static void clickBTN(WebElement button) 
