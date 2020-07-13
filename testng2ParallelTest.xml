@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Firefox Regression Suite" parallel="tests" thread-count="2">
+	<parameter name="browser" value="firefox"></parameter>
+
+	<test name="Regression Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="tests.UserRegisterationParallelTest" />
+		</classes>
+	</test>
+	<test name="IE Regression Test">
+		<parameter name="browser" value="ie"></parameter>
+		<classes>
+			<class name="tests.MyAccountParallelTest" />
+		</classes>
+	</test>
+</suite> 

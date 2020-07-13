@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="nopcommerce Regression Suite">
+	<parameter name="browser" value="firefox"></parameter>
+
+	<test name="Regression Test" preserve-order="true">
+		<classes>
+			<class name="tests.UserRegisterationTest" />
+			<class name="tests.SearhProductTest" />
+			<class name="tests.SearchProductUsingAutoSuggestTest" />
+			<class name="tests.ProductHoverMenuTest" />
+			<class name="tests.MyAccountTest" />
+			<class name="tests.EmailFriendTest" />
+			<class name="tests.ContactusTest" />
+			<class name="tests.ChangeCurrencyTest" />
+			<class name="tests.AddProductReviewTest" />
+			<class name="tests.AddProductToCompareTest" />
+			<class name="tests.AddProductToWishListTest" />
+			<class name="tests.AddProductToShoppingCartTest" />
+			<class name="tests.RegisteredUserCheckOutProductTest" />
+			<class name="tests.GuestUserCheckoutTest" />
+
+		</classes>
+	</test>
+</suite> 
